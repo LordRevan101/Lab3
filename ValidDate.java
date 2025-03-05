@@ -31,7 +31,7 @@ public class ValidDate {
 
         else{  
             switch(month){
-                case 1: case 3: case 7: case 8: case 10: case 12:
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12:
                     isValid = true;
                     break;
 
@@ -52,8 +52,8 @@ public class ValidDate {
                         else
                             output = "Can not have 30 or more days in a leap year";
                     }
-                    else{  ////non-leap year
-                        if(day <= 28) //Update X
+                    else{
+                        if(day <= 28)
                             isValid = true;
                         else
                             output = "Can not have 29 or more days in a non-leap year";
@@ -71,5 +71,5 @@ public class ValidDate {
         
         else
             System.out.println(month + "/" + day + "/" + year + " is not a valid date. " + output);
-    }////end main
-}////end class
+    }
+}
